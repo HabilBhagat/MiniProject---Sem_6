@@ -76,7 +76,8 @@ def main():
         csvfile=open('points.csv','aq', newline='')
         obj=csv.writer(csvfile)
         for row in keypoint_coords:
-            obj.writerow(row)
+            if(row[0][0] != 0.0):
+                obj.writerow(row)
         
         csvfile.close()
         #overlay_image = posenet.draw_skel_and_kp(display_image,[],[],[])

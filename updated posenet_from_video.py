@@ -77,6 +77,7 @@ def main():
         obj=csv.writer(csvfile)
         for row in keypoint_coords:
             if(row[0][0] != 0.0):
+                row = row.flatten()
                 obj.writerow(row)
         
         csvfile.close()

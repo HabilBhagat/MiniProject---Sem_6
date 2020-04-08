@@ -73,7 +73,7 @@ def main():
         #points.close()
 
 
-        csvfile=open('points.csv','aq', newline='')
+        csvfile=open('points.csv','a', newline='')
         obj=csv.writer(csvfile)
         for row in keypoint_coords:
             if(row[0][0] != 0.0):

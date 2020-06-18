@@ -8,7 +8,7 @@ import sys
 from tkinter import *
 import tkinter.messagebox as messagebox
 
-df=pd.read_csv("final.csv")
+df=pd.read_csv("final_n.csv")
 
 x=df.iloc[:,0:16]
 

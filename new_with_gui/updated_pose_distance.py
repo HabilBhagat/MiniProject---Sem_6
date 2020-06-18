@@ -28,7 +28,7 @@ def main():
     model = model.cuda()
     output_stride = model.output_stride
 
-    cap = cv2.VideoCapture("gourishankar.mp4")
+    cap = cv2.VideoCapture("test.mp4")
     cap.set(3, args.cam_width)
     cap.set(4, args.cam_height)
 
